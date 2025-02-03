@@ -10,9 +10,17 @@
 body{
     width: 1440px;
 }
+.width-1250{
+    width:1440px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 95px;
+    font-family: "Plus Jakarta Sans", serif;
+}
 header, section, main, footer{
-    width:1250px;
-    margin: 0 95px;
+    width: 1250px;
     padding: 0 95px;
     font-family: "Plus Jakarta Sans", serif;
 }
@@ -78,47 +86,41 @@ button{
 }
 .hero{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #EFF0F3;
     height: 814px;
-    gap: 116px;
+    gap: 50px;
 }
-.hero-content{
+.hero-content {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-    max-width: 10000px;
 }
 .hero-content h1{
-    font-size: 64px;
+    font-size: 63px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.hero img{
-    display: block;
-    width: 434px;
-    justify-content: space-between;
-    align-items: center;
-}
-.description{
+.hero-content p{
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #9A9494;
     display:flex;
     align-items: center;
     height: 60px;
     width: 652px;
-    color:#9A9494;
-    font-size: 20px;
-    font-weight: 400;
     gap: 12px;
 }
-.description::before{
+.hero-content p::before{
     width: 3px;
-    height: 100%;
-    display: inline-block;
+    height: 56px;
     background: #2B2C34;
-    content: "";
+    content:"";
 }
 .subscribe{
     display: flex;
@@ -144,64 +146,208 @@ button{
     gap: 10px;
     border-radius: 8px;
 }
-.hero-image{
-    display: flex;
-    width: 470px;
-    justify-content: center;
-    align-items: center;
-
+.hero img{
+    width: 400px;
 }
 .category{
     background: #EFF0F3;
-    display: flex;
+    width: 1250px;
+    padding: 0 95px;
+    margin: 0 auto;
     height: 500px;
+    display: inline-flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
 }
-.category-header{
-    display: inline;
-    width: 1252px;
-    height: 35px;
-    padding: 2px 0px 3px 0px;
-    justify-content: space-around;
-    align-items: baseline;
-    gap: 842px;
-
-}
-.category-header h2{
-    color: #2B2C34;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-}
-.category-header a{
-    color: #2B2C34;
-    text-align: right;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
-.category-list{
+.header-category{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 37px;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 650px;
 }
 .card{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 280px;
-    border-radius: 8px;
+    gap: 15px;
+}
+.card-category{
     background:#FFFFFE;
+    border-radius: 8px;
+    width: 200px;
+    height: 260px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+.special-hover:hover{
+    background-color: #6246EA;
+    color: white;
+}
+.card-category p{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+
+}
+.CSS{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.JS{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     text-align: center;
-    flex: 1;
-    transition: 0.4s ease-in-out;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Tailwind{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.Vue{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 37px;
+
+}
+.React{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
 }
 
+/* ========== Subscription Section ========== */
+.subscribe-section {
+    text-align: center;
+    background:#EFF0F3;
+    display: inline-flex;
+    padding: 58px 372px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.subscribe-section img {
+    margin-bottom: 15px;
+    width: 80.066px;
+    height: 106.755px;
+}
+
+.subscribe-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.subscribe-section p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.subscribe-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.subscribe-box button {
+    padding: 12px 20px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.subscribe-box button:hover {
+    background-color: #4a3dbf;
+}
+
+/* ========== Footer Section ========== */
+.footer {
+    background:#E4E5E9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 95px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #222;
+}
+
+.footer p, .footer a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer .brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.footer .brand span {
+    color: #6c5ce7;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+    color: #6c5ce7;
+}
+
+.footer-bottom {
+    color:#2B2C34;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    padding-top: 20px;
+    padding-left: 95px;
+    padding-bottom: 26px;
+}
